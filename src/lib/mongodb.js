@@ -26,16 +26,16 @@ async function dbConnect() {
   if (!cached.promise) {
     let cleanUri = rawUri.trim();
 
-    // Auto-fix malformed query string like /?chorki365alaminbhai=Cluster0
-    if (cleanUri.includes('/?chorki365alaminbhai=')) {
-      cleanUri = cleanUri.replace('/?chorki365alaminbhai=', '/chorki365alaminbhai?appName=');
+    // Auto-fix malformed query string like /?all9xbet9agent_com=Cluster0
+    if (cleanUri.includes('/?all9xbet9agent_com=')) {
+      cleanUri = cleanUri.replace('/?all9xbet9agent_com=', '/all9xbet9agent_com?appName=');
     }
 
     const opts = {
       bufferCommands: false,
       serverSelectionTimeoutMS: 8000,
       connectTimeoutMS: 10000,
-      dbName: process.env.MONGODB_DB_NAME || 'chorki365alaminbhai'
+      dbName: process.env.MONGODB_DB_NAME || 'all9xbet9agent_com'
     };
 
     console.log(`[MongoDB] Connecting to database: ${opts.dbName}...`);
